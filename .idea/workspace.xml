@@ -2,10 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="204811f2-eccb-4ffb-a991-fabf23d6b2c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logout.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.sql" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.phar" afterPath="$PROJECT_DIR$/composer.phar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api/siteinfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codeception.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_data/dump.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_data/lhsdump.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_data/pug" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_data/pugutf8.dump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/GetSiteInfoCest.GetSiteInfo.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/GetSiteInfoCest.invalidAccessToken.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/GetSiteInfoCest.missingAccessToken.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/IndexCept.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/IndexCest.checkLoggedInRefactored.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/IndexCest.checkLoggedin.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/IndexCest.mockLogin.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/LoginCest.checkLogin.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/SigninCest.checkCantSigninByEmailDuplicate.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_output/SigninCest.checkSignin.fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/ApiTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/FunctionalTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/Helper/Api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/Helper/Functional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/Helper/Unit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/UnitTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/_generated/AcceptanceTesterActions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/_generated/ApiTesterActions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/_support/_generated/UnitTesterActions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance/IndexCest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance/LoginCest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance/SigninCest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/acceptance/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/GetSiteInfoCest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/api/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/functional.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/functional/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/unit.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/unit/_bootstrap.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signin.php" afterPath="$PROJECT_DIR$/signin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeception_practice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,22 +65,41 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="codeception_practice" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/logout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14145142" vertical-offset="0" max-vertical-offset="813">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5343082" vertical-offset="8" max-vertical-offset="897">
+                  <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.33633295" vertical-offset="69" max-vertical-offset="1127">
+                  <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,10 +107,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/home.php" />
-        <option value="$PROJECT_DIR$/signin.php" />
         <option value="$PROJECT_DIR$/logout.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/signin.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -61,8 +122,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="44" />
     <option name="y" value="23" />
-    <option name="width" value="1406" />
-    <option name="height" value="877" />
+    <option name="width" value="1777" />
+    <option name="height" value="966" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -113,6 +174,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="split vertical&#9;ACTION&#9;SplitVertically" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,6 +182,26 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -136,26 +218,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="23" width="1406" height="877" extended-state="0" />
+    <frame x="44" y="23" width="1777" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2536657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15273775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -185,27 +267,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="506">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4809348" vertical-offset="0" max-vertical-offset="813">
-          <caret line="17" column="10" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229173000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -221,30 +283,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90528905" vertical-offset="0" max-vertical-offset="1196">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1430229392000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14145142" vertical-offset="0" max-vertical-offset="813">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="813">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1430220736000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430220736000" expanded="true" signature="-1:-1" placeholder="{&quot;illuminate/database&quot;: &quot;~5.0&quot;...}" />
+            <marker date="1430220736000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1430220736000" expanded="true" signature="-1:-1" placeholder="{&quot;App\\&quot;: &quot;classes/&quot;...}" />
+            <marker date="1430220736000" expanded="true" signature="-1:-1" placeholder="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9482565" vertical-offset="537" max-vertical-offset="1564">
+          <caret line="60" column="95" selection-start-line="60" selection-start-column="95" selection-end-line="60" selection-end-column="95" />
+          <folding>
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1430231919000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33633295" vertical-offset="69" max-vertical-offset="1127">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5343082" vertical-offset="8" max-vertical-offset="897">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding />
         </state>
       </provider>

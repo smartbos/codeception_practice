@@ -14,13 +14,30 @@ if ($username == 'lhs' && $password = '123') {
     <head>
         <meta charset="UTF-8">
         <title>로그인 페이지</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     </head>
     <body>
+    <div class="container">
+        <div class="page-header">
+            <h1>로그인 페이지</h1>
+        </div>
+
         <form action="#" method="post">
-            <input type="text" name="username">
-            <input type="password" name="password">
-            <input type="submit" name="login">
+            <div class="form-group">
+                <label>email</label>
+                <input type="text" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>password</label>
+                <input type="password" name="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-default" value="로그인">
+            </div>
         </form>
-        <a href="/signin.php">sign in</a>
+
+        <a href="/">홈</a>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </body>
 </html>
