@@ -1,0 +1,22 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - PhpBrowser
+        - \Helper\Acceptance
+        - Db
+    config:
+        PhpBrowser:
+            url: 'http://local.codeceptstudy.com'
+    Db:
+        dsn: 'mysql:host=localhost;dbname=pug'
+        user: 'root'
+        password: 'root'
+        dump: tests/_data/pugutf8.dump
+        populate: false
+        cleanup: true
