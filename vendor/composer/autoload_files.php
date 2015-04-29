@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     $vendorDir . '/danielstjules/stringy/src/Create.php',
     $vendorDir . '/illuminate/support/helpers.php',
+    $vendorDir . '/react/promise/src/functions_include.php',
     $baseDir . '/setup.php',
 );
