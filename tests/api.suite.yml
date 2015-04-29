@@ -1,0 +1,8 @@
+class_name: ApiTester
+modules:
+    enabled: [PhpBrowser, REST, ApiHelper]
+    config:
+      PhpBrowser:
+        url: http://local.codeceptstudy.com
+      REST:
+        url: http://local.codeceptstudy.com/api/
