@@ -4,9 +4,9 @@ class TestCommons {
     {
         $I->wantTo('로그인');
         $I->amOnPage('/login.php');
-        $I->fillField('username', 'lhs');
-        $I->fillField('password', '123');
-        $I->click('login');
+        $I->fillField('email', 'test1@gameshuttle.kr');
+        $I->fillField('password', 'byoponiti');
+        $I->click('로그인');
     }
 
     public static function SignMeIn($I)

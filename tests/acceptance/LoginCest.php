@@ -56,4 +56,13 @@ class LoginCest
         $I->amOnPage('/');
         $I->seeInCurrentUrl('main.php');
     }
+
+    public function redirectToMainWhenLoggedInRefactored(AcceptanceTester $I)
+    {
+        TestCommons::logMeIn($I);
+        $I->seeInCurrentUrl('main.php');
+
+        $I->amOnPage('/');
+        $I->seeInCurrentUrl('main.php');
+    }
 }
