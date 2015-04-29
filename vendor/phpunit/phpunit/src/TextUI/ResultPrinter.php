@@ -123,7 +123,6 @@ class PHPUnit_TextUI_ResultPrinter extends PHPUnit_Util_Printer implements PHPUn
         }
 
         $availableColors = array(self::COLOR_NEVER, self::COLOR_AUTO, self::COLOR_ALWAYS);
-
         if (!in_array($colors, $availableColors)) {
             throw PHPUnit_Util_InvalidArgumentHelper::factory(
                 3,
@@ -139,7 +138,8 @@ class PHPUnit_TextUI_ResultPrinter extends PHPUnit_Util_Printer implements PHPUn
             throw PHPUnit_Util_InvalidArgumentHelper::factory(5, 'integer or "max"');
         }
 
-        $console            = new Console;
+        $console = new Console;
+
         $maxNumberOfColumns = $console->getNumberOfColumns();
 
         if ($numberOfColumns == 'max' || $numberOfColumns > $maxNumberOfColumns) {
@@ -341,33 +341,49 @@ class PHPUnit_TextUI_ResultPrinter extends PHPUnit_Util_Printer implements PHPUn
                     ($this->numAssertions == 1) ? '' : 's'
                 )
             );
+        } elseif ((!$result->allCompletelyImplemented() ||
+                  !$result->allHarmless() ||
+                  !$result->noneSkipped()) &&
+                 $result->wasSuccessful()) {
+            $this->writeWithColor(
+                'fg-black, bg-yellow',
+                sprintf(
+                    "%sOK, but incomplete, skipped, or risky tests!\n" .
+                    'Tests: %d, Assertions: %d%s%s%s.',
+                    $this->verbose ? "\n" : '',
+                    count($result),
+                    $this->numAssertions,
+                    $this->getCountString(
+                        $result->notImplementedCount(),
+                        'Incomplete'
+                    ),
+                    $this->getCountString(
+                        $result->skippedCount(),
+                        'Skipped'
+                    ),
+                    $this->getCountString(
+                        $result->riskyCount(),
+                        'Risky'
+                    )
+                )
+            );
         } else {
-            if ($result->wasSuccessful()) {
-                $color = 'fg-black, bg-yellow';
-
-                if ($this->verbose) {
-                    $this->write("\n");
-                }
-
-                $this->writeWithColor(
-                    $color,
-                    'OK, but incomplete, skipped, or risky tests!'
-                );
-            } else {
-                $color = 'fg-white, bg-red';
-
-                $this->write("\n");
-                $this->writeWithColor($color, 'FAILURES!');
-            }
-
-            $this->writeCountString(count($result), 'Tests', $color, true);
-            $this->writeCountString($this->numAssertions, 'Assertions', $color, true);
-            $this->writeCountString($result->errorCount(), 'Errors', $color);
-            $this->writeCountString($result->failureCount(), 'Failures', $color);
-            $this->writeCountString($result->skippedCount(), 'Skipped', $color);
-            $this->writeCountString($result->notImplementedCount(), 'Incomplete', $color);
-            $this->writeCountString($result->riskyCount(), 'Risky', $color);
-            $this->write(".\n");
+            $this->writeWithColor(
+                'fg-white, bg-red',
+                sprintf(
+                    "\nFAILURES!\n" .
+                    'Tests: %d, Assertions: %s%s%s%s%s.',
+                    count($result),
+                    $this->numAssertions,
+                    $this->getCountString($result->failureCount(), 'Failures'),
+                    $this->getCountString($result->errorCount(), 'Errors'),
+                    $this->getCountString(
+                        $result->notImplementedCount(),
+                        'Incomplete'
+                    ),
+                    $this->getCountString($result->skippedCount(), 'Skipped')
+                )
+            );
         }
     }
 
@@ -580,19 +596,17 @@ class PHPUnit_TextUI_ResultPrinter extends PHPUnit_Util_Printer implements PHPUn
             return $buffer;
         }
 
-        $codes   = array_map('trim', explode(',', $color));
-        $lines   = explode("\n", $buffer);
+        $codes = array_map('trim', explode(',', $color));
+        $lines = explode("\n", $buffer);
         $padding = max(array_map('strlen', $lines));
-        $styles  = array();
 
+        $styles = array();
         foreach ($codes as $code) {
             $styles[] = self::$ansiCodes[$code];
         }
-
         $style = sprintf("\x1b[%sm", implode(';', $styles));
 
         $styledLines = array();
-
         foreach ($lines as $line) {
             $styledLines[] = $style . str_pad($line, $padding) . "\x1b[0m";
         }
@@ -603,18 +617,14 @@ class PHPUnit_TextUI_ResultPrinter extends PHPUnit_Util_Printer implements PHPUn
     /**
      * Writes a buffer out with a color sequence if colors are enabled.
      *
-     * @param string  $color
-     * @param string  $buffer
-     * @param boolean $lf
+     * @param string $color
+     * @param string $buffer
      * @since  Method available since Release 4.0.0
      */
-    protected function writeWithColor($color, $buffer, $lf = true)
+    protected function writeWithColor($color, $buffer)
     {
-        $this->write($this->formatWithColor($color, $buffer));
-
-        if ($lf) {
-            $this->write("\n");
-        }
+        $buffer = $this->formatWithColor($color, $buffer);
+        $this->write($buffer . "\n");
     }
 
     /**
@@ -628,32 +638,5 @@ class PHPUnit_TextUI_ResultPrinter extends PHPUnit_Util_Printer implements PHPUn
     {
         $buffer = $this->formatWithColor($color, $buffer);
         $this->writeProgress($buffer);
-    }
-
-    /**
-     * @param  integer $count
-     * @param  string  $name
-     * @param  string  $color
-     * @param  boolean $always
-     * @since  Method available since Release 4.6.5
-     */
-    private function writeCountString($count, $name, $color, $always = false)
-    {
-        static $first = true;
-
-        if ($always || $count > 0) {
-            $this->writeWithColor(
-                $color,
-                sprintf(
-                    '%s%s: %d',
-                    !$first ? ', ' : '',
-                    $name,
-                    $count
-                ),
-                false
-            );
-
-            $first = false;
-        }
     }
 }

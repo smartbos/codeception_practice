@@ -47,6 +47,9 @@
     "bin": [
         "phpunit"
     ],
+    "config": {
+        "bin-dir": "bin"
+    },
     "autoload": {
         "classmap": [
             "src/"

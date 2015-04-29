@@ -13,6 +13,6 @@ modules:
     config:
         WebDriver:
             url: 'http://local.codeceptstudy.com'
-            browser: 'firefox'
+            browser: firefox
             capabilities:
                unexpectedAlertBehaviour: 'accept'

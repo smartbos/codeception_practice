@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.42-log)
 # Database: pug
-# Generation Time: 2015-04-29 01:29:45 +0000
+# Generation Time: 2015-04-29 03:19:32 +0000
 # ************************************************************
 
 
@@ -27,7 +27,7 @@ DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `email` varchar(20) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
   `password` varchar(60) NOT NULL DEFAULT '',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL,

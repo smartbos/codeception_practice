@@ -6,6 +6,9 @@
     "illuminate/filesystem": "~5.0",
     "codeception/codeception": "*"
   },
+  "require-dev": {
+    "codeception/codeception": "*"
+  },
   "autoload": {
     "psr-4": {
       "App\\": "classes/",
