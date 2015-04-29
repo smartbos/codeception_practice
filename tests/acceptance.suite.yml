@@ -7,9 +7,12 @@
 class_name: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser
+        - WebDriver
         - AcceptanceHelper
         - Db
     config:
-        PhpBrowser:
+        WebDriver:
             url: 'http://local.codeceptstudy.com'
+            browser: firefox
+            capabilities:
+               unexpectedAlertBehaviour: 'accept'

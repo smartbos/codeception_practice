@@ -12,7 +12,7 @@
     </div>
     <h2>Welcome</h2>
     <p><?php echo $user->email;?> 로 로그인 했습니다.</p>
-    <span id="logoutBtn" class="btn btn-danger">로그아웃</span>
+    <a href="/logout.php" id="logoutBtn" class="btn btn-danger">로그아웃</a>
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
