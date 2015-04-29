@@ -14,3 +14,5 @@ modules:
         WebDriver:
             url: 'http://local.codeceptstudy.com'
             browser: 'firefox'
+            capabilities:
+               unexpectedAlertBehaviour: 'accept'
