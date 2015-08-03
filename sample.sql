@@ -6,8 +6,8 @@
 # http://code.google.com/p/sequel-pro/
 #
 # Host: localhost (MySQL 5.5.42-log)
-# Database: pug
-# Generation Time: 2015-04-29 01:29:45 +0000
+# Database: codeception
+# Generation Time: 2015-08-03 12:38:18 +0000
 # ************************************************************
 
 
@@ -35,15 +35,6 @@ CREATE TABLE `users` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-
-INSERT INTO `users` (`id`, `email`, `password`, `created_at`, `updated_at`)
-VALUES
-	(3,'test1@gameshuttle.kr','$2y$10$9O/u6e6LFAMa4hxO3HaZ5uHXElwPF3aA4IjwC1o0kka.oUEF5E0qa','2015-04-28 18:26:16','2015-04-28 18:26:16');
-
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 
